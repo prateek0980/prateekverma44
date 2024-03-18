@@ -1,3 +1,71 @@
+
+Introduction of DBMS (Database Management System) – Set -1 
+
+A Database Management System (DBMS) is a software system that is designed to manage and organize data in a structured manner. It allows users to create, modify, and query a database, as well as manage the security and access controls for that database.
+
+DBMS provides an environment to store and retrieve the data in coinvent and efficient manner.
+
+# Key Features of DBMS
+
+
+1- Data modeling: A DBMS provides tools for creating and modifying data models, which define the structure and relationships of the data in a database.
+
+2- Data storage and retrieval: A DBMS is responsible for storing and retrieving data from the database, and can provide various methods for searching and querying the data.
+
+3-Concurrency control: A DBMS provides mechanisms for controlling concurrent access to the database, to ensure that multiple users can access the data without conflicting with each other.
+
+4-Data integrity and security: A DBMS provides tools for enforcing data integrity and security constraints, such as constraints on the values of data and access controls that restrict who can access the data.
+
+5-Backup and recovery: A DBMS provides mechanisms for backing up and recovering the data in the event of a system failure.
+
+6-DBMS can be classified into two types: Relational Database Management System (RDBMS) and Non-Relational Database Management System (NoSQL or Non-SQL)
+
+7-RDBMS: Data is organized in the form of tables and each table has a set of rows and columns. The data are related to each other through primary and foreign keys.
+
+
+
+Advantages of DBMS
+
+1-Data organization: A DBMS allows for the organization and storage of data in a structured manner, making it easy to retrieve and query the data as needed.
+
+2-Data integrity: A DBMS provides mechanisms for enforcing data integrity constraints, such as constraints on the values of data and access controls that restrict who can access the data.
+
+3-Concurrent access: A DBMS provides mechanisms for controlling concurrent access to the database, to ensure that multiple users can access the data without conflicting with each other.
+
+4-Data security: A DBMS provides tools for managing the security of the data, such as controlling access to the data and encrypting sensitive data.
+
+5-Backup and recovery: A DBMS provides mechanisms for backing up and recovering the data in the event of a system failure.
+
+6-Data sharing: A DBMS allows multiple users to access and share the same data, which can be useful in a collaborative work environment.
+
+
+Disadvantages of DBMS
+Complexity: DBMS can be complex to set up and maintain, requiring specialized knowledge and skills.
+
+Performance overhead: The use of a DBMS can add overhead to the performance of an application, especially in cases where high levels of concurrency are required.
+
+Scalability: The use of a DBMS can limit the scalability of an application, since it requires the use of locking and other synchronization mechanisms to ensure data consistency.
+
+Cost: The cost of purchasing, maintaining and upgrading a DBMS can be high, especially for large or complex systems.
+
+
+
+
+Several Types of DBMS
+
+Relational DBMS (RDBMS): An RDBMS stores data in tables with rows and columns, and uses SQL (Structured Query Language) to manipulate the data.
+
+Object-Oriented DBMS (OODBMS): An OODBMS stores data as objects, which can be manipulated using object-oriented programming languages.
+
+NoSQL DBMS: A NoSQL DBMS stores data in non-relational data structures, such as key-value pairs, document-based models, or graph mod
+
+
+
+
+
+
+
+
 Data stored is in table format    	                                 Data stored is in the file format
 Multiple data elements are accessible together  	                Individual access of data elements
 Data in the form of a table are linked together	                           No connection between data
