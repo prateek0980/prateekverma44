@@ -1,0 +1,145 @@
+To create SQL queries for the entities "Admin", "Institute", "Communicator", and "Regulators" based on the ER diagram provided, I'll outline the table structures and then write sample SQL queries for each entity.
+
+### Table Structures
+
+**1. Admin Table:**
+```sql
+CREATE TABLE Admin (
+    AdminID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Role VARCHAR(50),
+    Email VARCHAR(100)
+);
+```
+
+**2. Institute Table:**
+```sql
+CREATE TABLE Institute (
+    InstituteID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Location VARCHAR(100),
+    InstituteProfile TEXT
+);
+```
+
+**3. Communicator Table:**
+```sql
+CREATE TABLE Communicator (
+    CommunicatorID INT PRIMARY KEY,
+    SurveyData TEXT,
+    TeacherGradingData TEXT
+);
+```
+
+**4. Regulators Table:**
+```sql
+CREATE TABLE Regulators (
+    RegulatorID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    MonitorProgressAndServiceTrends TEXT
+);
+```
+
+### Sample SQL Queries
+
+**Admin Queries:**
+1. Insert a new admin record:
+```sql
+INSERT INTO Admin (AdminID, Name, Role, Email)
+VALUES (1, 'John Doe', 'System Admin', 'john.doe@example.com');
+```
+
+2. Select all admin records:
+```sql
+SELECT * FROM Admin;
+```
+
+3. Update an admin's email:
+```sql
+UPDATE Admin
+SET Email = 'john.newemail@example.com'
+WHERE AdminID = 1;
+```
+
+4. Delete an admin record:
+```sql
+DELETE FROM Admin
+WHERE AdminID = 1;
+```
+
+**Institute Queries:**
+1. Insert a new institute record:
+```sql
+INSERT INTO Institute (InstituteID, Name, Location, InstituteProfile)
+VALUES (1, 'ABC University', 'New York', 'Profile of ABC University');
+```
+
+2. Select all institute records:
+```sql
+SELECT * FROM Institute;
+```
+
+3. Update an institute's profile:
+```sql
+UPDATE Institute
+SET InstituteProfile = 'Updated Profile of ABC University'
+WHERE InstituteID = 1;
+```
+
+4. Delete an institute record:
+```sql
+DELETE FROM Institute
+WHERE InstituteID = 1;
+```
+
+**Communicator Queries:**
+1. Insert a new communicator record:
+```sql
+INSERT INTO Communicator (CommunicatorID, SurveyData, TeacherGradingData)
+VALUES (1, 'Survey data example', 'Teacher grading data example');
+```
+
+2. Select all communicator records:
+```sql
+SELECT * FROM Communicator;
+```
+
+3. Update a communicator's survey data:
+```sql
+UPDATE Communicator
+SET SurveyData = 'Updated survey data'
+WHERE CommunicatorID = 1;
+```
+
+4. Delete a communicator record:
+```sql
+DELETE FROM Communicator
+WHERE CommunicatorID = 1;
+```
+
+**Regulators Queries:**
+1. Insert a new regulator record:
+```sql
+INSERT INTO Regulators (RegulatorID, Name, MonitorProgressAndServiceTrends)
+VALUES (1, 'Regulator A', 'Progress and service trends data');
+```
+
+2. Select all regulator records:
+```sql
+SELECT * FROM Regulators;
+```
+
+3. Update a regulator's progress and service trends data:
+```sql
+UPDATE Regulators
+SET MonitorProgressAndServiceTrends = 'Updated progress and service trends data'
+WHERE RegulatorID = 1;
+```
+
+4. Delete a regulator record:
+```sql
+DELETE FROM Regulators
+WHERE RegulatorID = 1;
+```
+
+These queries provide a basic CRUD (Create, Read, Update, Delete) functionality for each of the entities as represented in your ER diagram.
