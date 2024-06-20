@@ -1,0 +1,17 @@
+// script.js
+document.getElementById('gradeForm').addEventListener('submit', async function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData();
+    formData.append('name', document.getElementById('name').value);
+    formData.append('grade', document.getElementById('grade').value);
+    formData.append('photo', document.getElementById('photo').files[0]);
+    
+    const response = await fetch('/submit', {
+        method: 'POST',
+        body: formData,
+    });
+    
+    const result = await response.json();
+    document.getElementById('message').innerText = result.message;
+});
